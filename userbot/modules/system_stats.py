@@ -229,15 +229,15 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        "`Bot services is running...`\n"
+        "`Layanan bot sedang berjalan ...`\n"
         "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`\n"
         f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
-        f"•  🐍 `Python         : v{python_version()} `\n"
+        f"•  👩‍💻 `Python         : v{python_version()} `\n"
         f"•  👤 `User           :`  {DEFAULTUSER} \n"
         "`----------------------------------`\n"
-        f"•  💻 `Running on     : {repo.active_branch.name} `\n"
-        f"•  🗃 `Loaded modules : {len(modules)} `\n"
-        f"•  🧸 `One4uBot       : v{USERBOT_VERSION} `\n"
+        f"•  🏃 `Running on     : {repo.active_branch.name} `\n"
+        f"•  🗃️ `Loaded modules : {len(modules)} `\n"
+        f"•  🤖 `One4uBot       : v{USERBOT_VERSION} `\n"
         f"•  🕒 `Bot Uptime     : {uptime} `\n"
         "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`"
     )
