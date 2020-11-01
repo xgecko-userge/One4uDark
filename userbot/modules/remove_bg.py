@@ -19,10 +19,10 @@ from userbot.events import register
 
 @register(outgoing=True, pattern="^.rbg(?: |$)(.*)")
 async def kbg(remob):
-    """ For .rbg command, Remove Image Background. """
+    """ For .rbg command, Hapus Gambar Latar Belakang. """
     if REM_BG_API_KEY is None:
         await remob.edit(
-            "`Error: Remove.BG API key missing! Add it to environment vars or config.env.`"
+            "`Error: Hapus kunci API BG hilang! Tambahkan Api Key Supaya Bisa Bekerja`"
         )
         return
     input_str = remob.pattern_match.group(1)
